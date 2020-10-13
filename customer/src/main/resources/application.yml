@@ -2,7 +2,8 @@ spring:
   application:
     name: 'customer service'
     boot:
-      client: https://localhost:8081
+      admin:
+        client: https://localhost:8081
 datasource:
   urL: jdbc:h2:mem:customer
   username: sa
@@ -28,4 +29,4 @@ eureka:
     lease-expiration-duration-in-seconds: 20
   client:
     service-url:
-      defaulttzone: https://localhost:9090/eureka
+      defaulttZone: https://localhost:9090/eureka
